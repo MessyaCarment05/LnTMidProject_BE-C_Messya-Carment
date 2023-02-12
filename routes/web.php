@@ -20,11 +20,11 @@ Route::patch('/update-data/{id}', [DataController::class, 'update'])->name('upda
 Route::delete('/delete-data/{id}', [DataController::class, 'delete'])->name('delete');
 
 
-//TODO kirim data category ke tampilan FE
+
 Route::get('/create-data', [DataController::class, 'createData']);
 
-//TODO Implementasi fungsi storeBook
+
 Route::post('/store-data', [DataController::class, 'storeData']);
 
-//TODO Tampilin category pada view dengan relationships
+
 Route::get('/', [DataController::class, 'show']);
